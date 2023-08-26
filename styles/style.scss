@@ -1,5 +1,41 @@
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap');
 
-header {
-     background-color: red;
+
+$primary-color: #222831;
+$secondary-color: #393E46;
+$btn-color: #00ADB5;
+$text-color: #EEEEEE;
+body {
+     background: $primary-color !important;
+     .container{
+          padding: 10%;
+          font-family: 'Roboto', sans-serif;
+          color: $text-color; 
+     }
 }
+
+h1.qr-text {
+     font-family: 'Black Ops One', cursive;
+     font-size: 48px; 
+}
+
+
+#qrcode {
+
+     img{
+          padding: 5% 0 ;
+          min-width:500px;
+          width: 100%;
+          min-height:500px;
+          height: 100%;
+     }
+}
+
+.main-box {
+     width: 100%;
+     max-width: 600px;
+     padding: 2%;
+     border: 1px solid $text-color;
+     border-radius: 5%;
+ }
