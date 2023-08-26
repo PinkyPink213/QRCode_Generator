@@ -4,7 +4,7 @@ body {
   background: #222831 !important;
 }
 body .container {
-  padding: 5%;
+  padding: 2%;
   font-family: "Roboto", sans-serif;
   color: #EEEEEE;
 }
@@ -12,14 +12,11 @@ body .container {
 h1.qr-text {
   font-family: "Black Ops One", cursive;
   font-size: 32px;
+  margin: 0;
 }
 
 #qrcode img {
-  padding: 5% 0;
-  min-width: 300px;
-  width: 100%;
-  min-height: 300px;
-  height: 100%;
+  margin: 5% 0;
 }
 
 .main-box {

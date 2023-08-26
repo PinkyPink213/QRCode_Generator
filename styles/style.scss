@@ -9,7 +9,7 @@ $text-color: #EEEEEE;
 body {
      background: $primary-color !important;
      .container{
-          padding: 5%;
+          padding: 2%;
           font-family: 'Roboto', sans-serif;
           color: $text-color; 
      }
@@ -18,17 +18,13 @@ body {
 h1.qr-text {
      font-family: 'Black Ops One', cursive;
      font-size: 32px; 
+     margin: 0;
 }
 
 
 #qrcode {
-
      img{
-          padding: 5% 0 ;
-          min-width:300px;
-          width: 100%;
-          min-height:300px;
-          height: 100%;
+          margin: 5% 0;
      }
 }
 
