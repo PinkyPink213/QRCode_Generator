@@ -4,28 +4,25 @@ body {
   background: #222831 !important;
 }
 body .container {
-  padding: 10%;
+  padding: 5%;
   font-family: "Roboto", sans-serif;
   color: #EEEEEE;
 }
 
 h1.qr-text {
   font-family: "Black Ops One", cursive;
-  font-size: 48px;
 }
 
 #qrcode img {
-  padding: 5% 0;
-  min-width: 500px;
+  padding: 5%;
+  max-width: 500px;
   width: 100%;
-  min-height: 500px;
+  max-height: 500px;
   height: 100%;
+  
 }
 
 .main-box {
   width: 100%;
-  max-width: 600px;
-  padding: 2%;
-  border: 1px solid #EEEEEE;
-  border-radius: 5%;
+  max-width: 500px;
 }/*# sourceMappingURL=style.css.map */
