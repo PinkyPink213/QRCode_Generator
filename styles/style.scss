@@ -9,7 +9,7 @@ $text-color: #EEEEEE;
 body {
      background: $primary-color !important;
      .container{
-          padding: 10%;
+          padding: 5%;
           font-family: 'Roboto', sans-serif;
           color: $text-color; 
      }
@@ -17,7 +17,7 @@ body {
 
 h1.qr-text {
      font-family: 'Black Ops One', cursive;
-     font-size: 48px; 
+     font-size: 32px; 
 }
 
 
@@ -25,21 +25,28 @@ h1.qr-text {
 
      img{
           padding: 5% 0 ;
-          min-width:500px;
+          min-width:300px;
           width: 100%;
-          min-height:500px;
+          min-height:300px;
           height: 100%;
      }
 }
 
 .main-box {
      width: 100%;
-     max-width: 600px;
+     max-width: 450px;
      padding: 2%;
-     border: 1px solid $text-color;
+     border: 1px solid $btn-color;
      border-radius: 5%;
  }
 
  input.form-control-color {
      width: 100%;
+ }
+
+ a.btn {
+     width: 100%;
+     background-color: $btn-color;
+     color: $text-color;
+     border:none;
  }
