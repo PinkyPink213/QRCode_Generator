@@ -36,4 +36,9 @@ a.btn {
   background-color: #00ADB5;
   color: #EEEEEE;
   border: none;
+}
+a.btn:hover, a.btn:active, a.btn:focus {
+  transition: all 0.3s ease;
+  background-color: #08D9D6;
+  color: #252A34;
 }/*# sourceMappingURL=style.css.map */

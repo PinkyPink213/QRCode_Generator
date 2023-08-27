@@ -45,4 +45,9 @@ h1.qr-text {
      background-color: $btn-color;
      color: $text-color;
      border:none;
+     &:hover,&:active,&:focus{
+          transition: all 0.3s ease;
+          background-color: #08D9D6;
+          color: #252A34;
+     }
  }
