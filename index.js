@@ -1,13 +1,12 @@
-let colorLight = "#ffffff",
-    colorDark = "#000000",
+let colorLight  = "#ffffff",
+    colorDark   = "#000000",
     defaultText = "QR Code Text",
-    text = defaultText,
-    size = 400;
+    text        = defaultText,
+    size        = 400;
 
 const getText     = document.querySelector("#mytext")
 const qrcode      = document.querySelector("#qrcode")
 const download    = document.querySelector(".download");
-const shareBtn    = document.querySelector(".share");
 const currentSize = document.querySelector(".size");
 const light       = document.querySelector("#color-one");
 const dark        = document.querySelector("#color-two");
@@ -16,11 +15,8 @@ currentSize.addEventListener("change", handleSize);
 getText.addEventListener("input", handleText);
 dark.addEventListener("input", handleDarkColor);
 light.addEventListener("input", handleLightColor);
-download.addEventListener("click",handleDownload)
-shareBtn.addEventListener("click", handleShare);
-
-
 getText.placeholder = text;
+
 function handleText(e){
     const value = e.target.value;
     text = value;
@@ -49,13 +45,9 @@ function handleDownload(){
     saveAs(src,'qrcode.png');
 }
 
-function handleShare(e){
-
-}
 
 function generateQRCode() {
     qrcode.innerHTML = "";
-    console.log(size)
     new QRCode(document.getElementById("qrcode"), {
         text: text,
         width: size,
@@ -65,4 +57,6 @@ function generateQRCode() {
         correctLevel : QRCode.CorrectLevel.H
     });
 }
+
 generateQRCode()
+
