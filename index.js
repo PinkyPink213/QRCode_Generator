@@ -4,22 +4,30 @@ let colorLight = "#ffffff",
     text = defaultText,
     size = 400;
 
-const getText = document.querySelector('#mytext')
-const qrcode  = document.querySelector('#qrcode')
-const download = document.querySelector(".download");
-const shareBtn = document.querySelector(".share");
+const getText     = document.querySelector("#mytext")
+const qrcode      = document.querySelector("#qrcode")
+const download    = document.querySelector(".download");
+const shareBtn    = document.querySelector(".share");
 const currentSize = document.querySelector(".size");
-const light = document.querySelector("#color-one");
-const dark = document.querySelector("#color-two");
+const light       = document.querySelector("#color-one");
+const dark        = document.querySelector("#color-two");
+// const getImg      = document.querySelector("#qrcode img");
+// const getImg      = document.querySelector("#qrcode img");
 
-
+            // let img=document.querySelector('img');
+            // bd.addEventListener('click',()=>{
+            //     let impath=img.getAttribute('src');
+            //     let fn=getFileName(impath);
+            //     saveAs(impath,fn);
+            // });
 currentSize.addEventListener("change", handleSize);
 getText.addEventListener("input", handleText);
 dark.addEventListener("input", handleDarkColor);
 light.addEventListener("input", handleLightColor);
+download.addEventListener("click",handleDownload)
 // shareBtn.addEventListener("click", handleShare);
 
-// getText.innerHTML = text;
+
 getText.placeholder = text;
 function handleText(e){
     const value = e.target.value;
@@ -42,6 +50,13 @@ function handleLightColor(e) {
     colorLight = e.target.value;
     generateQRCode();
 }
+
+function handleDownload(){
+    const getImg      = document.querySelector("#qrcode img");
+    const src         = getImg.getAttributeNode("src").value;
+    saveAs(src,'qrcode.png');
+}
+
 function generateQRCode() {
     qrcode.innerHTML = "";
     console.log(size)
