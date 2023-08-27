@@ -1,9 +1,9 @@
 # Project: QR Code Generator
 ### Features: 
-- Be able to generate qr code for each text
-- Be able to choose the color of QR Code
-- Be able to choose which size of QR code image you want
-- Can download QR Code image after done generating
+- Generate a QR Code for any given text.
+- Choose the color of the QR Code.
+- Select the desired size for the QR Code image.
+- Download the generated QR Code image upon completion.
 
 ### Screenshort of Our QR Code Generator
 
