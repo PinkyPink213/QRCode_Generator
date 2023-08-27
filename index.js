@@ -17,7 +17,7 @@ getText.addEventListener("input", handleText);
 dark.addEventListener("input", handleDarkColor);
 light.addEventListener("input", handleLightColor);
 download.addEventListener("click",handleDownload)
-// shareBtn.addEventListener("click", handleShare);
+shareBtn.addEventListener("click", handleShare);
 
 
 getText.placeholder = text;
@@ -47,6 +47,10 @@ function handleDownload(){
     const getImg      = document.querySelector("#qrcode img");
     const src         = getImg.getAttributeNode("src").value;
     saveAs(src,'qrcode.png');
+}
+
+function handleShare(e){
+
 }
 
 function generateQRCode() {
