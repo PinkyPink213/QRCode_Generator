@@ -11,15 +11,7 @@ const shareBtn    = document.querySelector(".share");
 const currentSize = document.querySelector(".size");
 const light       = document.querySelector("#color-one");
 const dark        = document.querySelector("#color-two");
-// const getImg      = document.querySelector("#qrcode img");
-// const getImg      = document.querySelector("#qrcode img");
 
-            // let img=document.querySelector('img');
-            // bd.addEventListener('click',()=>{
-            //     let impath=img.getAttribute('src');
-            //     let fn=getFileName(impath);
-            //     saveAs(impath,fn);
-            // });
 currentSize.addEventListener("change", handleSize);
 getText.addEventListener("input", handleText);
 dark.addEventListener("input", handleDarkColor);
