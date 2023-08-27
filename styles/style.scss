@@ -31,7 +31,7 @@ h1.qr-text {
 .main-box {
      width: 100%;
      max-width: 450px;
-     padding: 2%;
+     padding: 5%;
      border: 1px solid $btn-color;
      border-radius: 5%;
  }
@@ -51,11 +51,13 @@ h1.qr-text {
           color: #252A34;
      }
  }
-
- @media (max-width: 480px) {
+@media (max-width: 767px){
      body {
           margin: 5% 2% !important;
-      }
+     }
+     
+}
+ @media (max-width: 480px) {
      h1.qr-text {
           font-size: 28px;
      }
