@@ -15,7 +15,7 @@ currentSize.addEventListener("change", handleSize);
 getText.addEventListener("input", handleText);
 dark.addEventListener("input", handleDarkColor);
 light.addEventListener("input", handleLightColor);
-download.addEventListener("click",handleDownload)
+download.addEventListener("click",handleDownload);
 getText.placeholder = text;
 
 function handleText(e){
