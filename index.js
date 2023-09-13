@@ -15,6 +15,7 @@ currentSize.addEventListener("change", handleSize);
 getText.addEventListener("input", handleText);
 dark.addEventListener("input", handleDarkColor);
 light.addEventListener("input", handleLightColor);
+download.addEventListener("click",handleDownload)
 getText.placeholder = text;
 
 function handleText(e){
@@ -42,6 +43,7 @@ function handleLightColor(e) {
 function handleDownload(){
     const getImg      = document.querySelector("#qrcode img");
     const src         = getImg.getAttributeNode("src").value;
+    console.log('Download');
     saveAs(src,'qrcode.png');
 }
 
