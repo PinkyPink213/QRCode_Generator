@@ -2,7 +2,7 @@ let colorLight  = "#ffffff",
     colorDark   = "#000000",
     defaultText = "QR Code Text",
     text        = defaultText,
-    size        = 400;
+    size        = 300;
 
 const getText     = document.querySelector("#mytext")
 const qrcode      = document.querySelector("#qrcode")
